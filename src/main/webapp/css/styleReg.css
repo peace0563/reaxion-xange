@@ -1,0 +1,98 @@
+
+.log{
+	width:80%;
+	background:#000;
+        color:#ff3333;
+	box-sizing: border-box;
+	padding:5px 30px;
+        border: 2px solid red;
+        border-bottom: 2px solid black;
+}
+.logg{
+	width:80%;
+	background:#000;
+	color:#fff;
+	box-sizing: border-box;
+	padding:5px 30px;
+        border: 2px solid red;
+        border-top:2px solid black;
+        
+}
+.a1{
+	width:90px;
+	height:90px;
+	border-radius:50%;
+	position:absolute;
+	top:5%;
+	left:calc(50% - 50px);
+}
+h1{
+	color:#fb2525;
+	margin:0;
+	width:43%;
+	padding:0 0 20px;
+	text-align:center;
+	font-size:50px;
+}
+.log div{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+}
+.log input{
+	width:100%;
+	margin-bottom:20px;
+}
+.logg input{
+	width:25%;
+	margin-bottom:20px;
+}
+.log input[type="text"], input[type="password"], input[type="email"]{
+	border:none;
+	border-bottom: 1px solid red;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:white;
+	font-size:16px;
+}
+.cli{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:red;
+	font-size:16px;
+}
+.cl{
+	border:none;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:red;
+	font-size:16px;
+}
+.logg input[type="submit"],input[type="reset"]{
+	border:none;
+	outline:none;
+	height:50px;
+	font-weight:bold;
+	background:#fb2525;
+	color:#000;
+	font-size:30px;
+	border-radius:35px;
+}
+.logg input[type="submit"]:hover,input[type="reset"]:hover{
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}
+.log input[type="submit"]:hover,input[type="reset"]:hover{
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}
+.log a:hover{
+	color:#ffc107;
+}

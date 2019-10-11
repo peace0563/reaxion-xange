@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script type="text/javascript" src="js/em.js"></script>
+        <script>
+            var request;
+            function sendInfo()
+            {
+                var v= document.f2.t1.value;
+                var url="jsp/news_subs_ajax.jsp?val="+v;
+                
+                if(window.XMLHttpRequest)
+                    request=new XMLHttpRequest();
+                
+                try
+                {
+                    request.onreadystatechange=getInfo;
+                    request.open("GET",url,true);
+                    request.send();
+                }
+                catch(e)
+                {
+                    alert("Unable to connect to server");
+                }
+            }
+            
+            function getInfo(){
+                if(request.readyState===4){
+                    var val=request.responseText;
+                    document.getElementById('ude').innerHTML=val;
+                }
+            }         
+            
+        </script>
+	<title>Home</title>
+	<link rel="Stylesheet" type="text/css" href="css/menu.css" >
+	<link rel="Stylesheet" type="text/css" href="css/style.css" >
+        <link rel="Stylesheet" type="text/css" href="css/news_subs.css" >
+        
+</head>
+<body>
+	<header>
+		<div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="signin.html">Sign IN</a></li>
+				<li><a href="reg.html">Sign UP</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="help.html">Help</a></li>
+			</ul>
+		</div>
+		<div class="title">
+                    <h1><span class="color">MONEY MODE EXCHANGE</span></h1>
+                <br><br>
+                <h2 class="white">
+                    <center>Welcome to the Exchange!!!</center><br>
+                    <center>Here we provide our users with a facility to exchange</center>
+                    <center>their capital in any form with other users.</center>
+                </h2>
+          </div>
+       </header>
+            <form class="lker" name="f2" method="post" action="jsp/news_subscription.jsp" onsubmit="return email_vad()">
+                Subscribe to our Newsletter<br><br>
+                        <input type="text" name="t1" placeholder="Enter your E-Mail Address" required onkeyup="sendInfo()">
+                        <p id="ude"></p>
+                        <input type="submit" value="Subscribe">
+            </form><br>&nbsp;&nbsp;&nbsp;
+            <footer class="footer">
+        <span>COPYRIGHT 2019 || MONEY MODE EXCHANGE SYSTEM || ALL RIGHTS RESERVED</span>
+        </footer>
+</body>
+</html>

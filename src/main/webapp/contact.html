@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Contact us</title>
+        <script type="text/javascript" src="js/em.js"></script>
+        <link rel="Stylesheet" type="text/css" href="css/menu.css" >
+	<link rel="Stylesheet" type="text/css" href="css/style.css" >
+</head>
+<body>
+    <div>
+			<ul>
+				<li><a href="index.html">Back to Home</a></li>
+			</ul>
+		</div>
+	<div class="lo">
+	<img src="images/login.png" class="a1">
+		<h1>Contact Us </h1>
+                <form name="f1" method="post" action="jsp/user_contact.jsp" onsubmit="return validate()">
+				<label>Name:</label>
+				<input type="text" name="t1" placeholder="Full Name" required onkeyup="con()"><br>
+				<label> E-mail:</label>
+				<input type="email" name="t2" placeholder="E-mail" required><br>
+				<label> Mobile Number:</label>
+				<input type="text" name="t3" placeholder=" +91 Excluded" maxlength="10" required>
+				<label> Message:</label><br><textarea name="t4" placeholder="Message"></textarea><br>
+				<input type="submit" value="Send">
+                </form>
+	</div>
+</body>
+</html>

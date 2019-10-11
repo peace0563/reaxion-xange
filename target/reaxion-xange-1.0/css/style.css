@@ -1,0 +1,184 @@
+
+.log{
+	width:320px;
+	height:420px;
+	background:#000;
+	color:#fff;
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-sizing: border-box;
+	padding:70px 30px;
+        border: 2px solid red;
+}
+
+.lo{
+	width:320px;
+	height:480px;
+	background:#000;
+	color:#fff;
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-sizing: border-box;
+	padding:28px 30px;
+	border: 2px solid red;
+}
+
+.lo textarea{
+	height:70px;
+	width:250px;
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	color:#fff;
+	font-size:14px;
+}
+.dev{
+	color:#fb2525;
+	margin:0;
+	width:43%;
+	text-align:left;
+	font-size:40px;
+        padding-left: 10px;
+}
+.white{
+    color:#33ffff;
+	top:100%;
+	left:50%;
+        align-content: center;
+}
+.footer{
+        position: absolute;
+        top:95%;
+        left:30%;
+	color:#fff;
+        font-weight: bold;
+}
+.a1{
+	width:90px;
+	height:90px;
+	border-radius:50%;
+	position:absolute;
+	top:-12%;
+	left:calc(50% - 50px);
+}
+h1{
+	margin:0;
+	padding:0 0 20px;
+	text-align:center;
+	font-size:22px;
+}
+.log div{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+}
+.lo div{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+}
+
+.log input{
+	width:100%;
+	margin-bottom:20px;
+}
+.lo input{
+	width:100%;
+	margin-bottom:20px;
+}
+
+.log input[type="text"], input[type="password"],input[type="email"]{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+
+.lo input[type="text"], input[type="password"],input[type="email"]{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+.log  input[type="submit"]{
+	border:none;
+	outline:none;
+	height:40px;
+        font-weight:bold;
+	background:#fb2525;
+	color:#000;
+	font-size:18px;
+	border-radius:20px;
+}
+.log input[type="submit"]:hover{
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}
+.log a:hover{
+	color:#ffc107;
+}
+.lo  input[type="submit"]{
+	border:none;
+	outline:none;
+	height:40px;
+	background:#fb2525;
+        font-weight:bold;
+	color:#000;
+	font-size:18px;
+	border-radius:20px;
+}
+.lo input[type="submit"]:hover{
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}
+.lo a:hover{
+	color:#ffc107;
+}
+
+.color{
+	animation:colorchange 3s infinite;
+}
+@keyframes colorchange{
+	0%{color:red}
+	40%{color:cyan}
+	50%{color:white}
+	100%{color:red}
+}
+.colo{
+	animation:colorchange 5s infinite;
+	font-size:25px;
+}
+@keyframes colorchange{
+	0%{color:red}
+	25%{color:cyan}
+	50%{color:white}
+	100%{color:red}
+}	
+img{
+	border-radius:50%;
+	width:50%; 
+}
+.log1{
+	top:15%;
+	position:absolute;
+}
+	
+	
+	
+	
+	
+	
+	

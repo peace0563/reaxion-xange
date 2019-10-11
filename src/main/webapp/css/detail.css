@@ -1,0 +1,39 @@
+.log{
+    font-style: italic;
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 45%;
+    background:#000;
+    color:#fff;
+    border: 3px solid red;
+    box-sizing: border-box;
+    padding:2% 3%;
+}
+h1{
+	color:#fb2525;
+	margin:0;
+	width:43%;
+	padding:0 0 20px;
+	text-align:center;
+	font-size:50px;
+}
+.a1{
+	width:150px;
+	height:150px;
+	border-radius:50%;
+	position:absolute;
+	top:  12%;
+        left: 58%;
+        border-top: 3px solid #ff0033;
+        border-left: 3px solid #ff0033;
+        border-right: 3px solid #ff0033;
+}
+
+
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Register Here</title>
+    <script type="text/javascript" src="js/em.js"></script>
+    <script>
+            var request;
+            function sendInfo()
+            {
+                var v= document.f1.t10.value;
+                var url="jsp/user_ajax.jsp?val="+v;
+                
+                if(window.XMLHttpRequest)
+                    request=new XMLHttpRequest();
+                
+                try
+                {
+                    request.onreadystatechange=getInfo;
+                    request.open("GET",url,true);
+                    request.send();
+                }
+                catch(e)
+                {
+                    alert("Unable to connect to server");
+                }
+            }
+            
+            function getInfo(){
+                if(request.readyState===4){
+                    var val=request.responseText;
+                    document.getElementById('ude').innerHTML=val;
+                }
+            }         
+            
+        </script>
+	
+	<link rel="Stylesheet" href="css/menu.css" type="text/css">
+        <link rel="stylesheet" href="css/styleReg.css" type="text/css"/>
+        
+
+
+</head>
+<body>
+    
+<header><div><ul><li><a href="index.html">Back to Home</a></li></ul></div></header>
+
+<h1>Register Here</h1>
+<img src="images/login.png" class="a1">
+<form name="f1" method="post" action="jsp/reg.jsp" onsubmit="return validate()"><center>
+<table  class="log">
+<tr ><td width="520px">
+				<label>Name:</label>
+				<input type="text" name="t1" placeholder="Full Name" required><br>
+				<label> E-mail:</label>
+				<input type="email" name="t2" placeholder="E-mail" required><br>
+				<label> Student ID:</label>
+				<input type="text" name="t10" maxlength="8" placeholder="UGI Student ID" required onkeyup="sendInfo()"><br>
+                                <p id="ude"></p><br>
+				<label> Address: (Block, Year, Branch, Section, Class Room No.)</label>
+				<input type="text" name="t3" placeholder="Block, Year, Branch, Section, Class Room No." required><br>
+				<label> Mobile Number:</label>
+				<input type="text" name="t4" placeholder=" +91 Excluded" maxlength="10" required>
+			
+</td><td></td><td width="520px">
+    <br>	
+                <label>Gender:</label>
+				<select class="cli" name="t5">
+				<option class="cli" value="Select">Select</option>
+				<option class="cli" value="Male">Male</option>
+				<option class="cli" value="Female">Female</option>
+                </select><br>
+				<label>UPI:</label>
+				<input type="email" name="t9" placeholder="UPI Address" required>
+				<label>Subscription:</label>
+				<select class="cli" name="t6">
+				<option class="cli" value="Select">Select</option>
+				<option class="cli" value="Monthly">Monthly</option>
+				<option class="cli" value="Quaterly">Quaterly</option>
+				<option class="cli" value="Annual">Annual</option>
+                </select><br><br>
+                                <label>Password</label>
+				<input type="password" name="t7" placeholder="Password" onkeyup="strength()" required >
+                                <p class="cl" id="myloc"></p><br>
+                                <label>Confirm Password</label>
+                                <input type="password" name="t8" placeholder="Confirm Password" required>
+</td></tr></table></center>
+
+<center><table class="logg">
+    <tr><td><input type="submit" value="Register">&nbsp;<input type="reset" value="Clear"></td></tr>
+    <tr><td>Already have an account.&nbsp;<a href="signin.html">(Login)</a></td></tr>
+</table></center>	
+</form>
+</body>
+</html>
