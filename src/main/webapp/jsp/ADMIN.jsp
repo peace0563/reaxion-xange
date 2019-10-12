@@ -4,8 +4,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="Stylesheet" type="text/css" href="/reaxion-xange/css/menu.css" >
-	<link rel="Stylesheet" type="text/css" href="/reaxion-xange/css/style.css" >
+        <link rel="Stylesheet" type="text/css" href="/reaxion-xange.herokuapp.com/css/menu.css" >
+	<link rel="Stylesheet" type="text/css" href="/reaxion-xange.herokuapp.com/css/style.css" >
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script>
             function conf()
