@@ -5,7 +5,7 @@
 <html>
     <head>
         <link rel="Stylesheet" type="text/css" href="/css/menu.css" >
-	<link rel="Stylesheet" type="text/css" href="css/style.css" >
+	<link rel="Stylesheet" type="text/css" href="/css/style.css" >
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script>
             function conf()
